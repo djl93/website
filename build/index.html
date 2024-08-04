@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJL Automation</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon_package_v0.16/favicon.ico">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-stone-200 dark:bg-stone-800 dark:text-white">
+  <header class="sticky top-0 z-10 bg-stone-800 text-white dark:bg-stone-900">
+    <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+      <h1 class="text-3xl font-medium">
+        <a href="#hero">DJL Automation</a>
+      </h1>
+      <div>
+        <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+          </div>
+        </button>
+        <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+          <a href="#services" class="hover:opacity-90">Services</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+      </div>
+    </section>
+    <section id="mobile-menu"
+      class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-stone-800 text-5xl">
+      <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+        <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
+        <a href="#services" class="w-full py-6 text-center hover:opacity-90">Our Services</a>
+        <a href="#testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
+        <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
+      </nav>
+    </section>
+  </header>
+  <main class="mx-auto max-w-4xl">
+    <section id="hero"
+      class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
+      <article class="sm:w-1/2">
+        <h2 class="max-w-md text-center text-4xl font-bold text-stone-900 dark:text-white sm:text-left sm:text-5xl">
+          Your Code Is 
+          <span class="text-red-800 dark:text-red-500">Our Problem.</span>
+        </h2>
+        <p class="mt-4 max-w-md text-center text-2xl text-stone-700 dark:text-stone-400 sm:text-left">
+		  Our experienced control systems engineers are craftsmen with PLC and HMI software. We handle the software, so manufacturers and resource companies can focus on what they do best.
+        </p>
+        <p class="mt-4 max-w-md text-center text-2xl text-stone-700 dark:text-stone-400 sm:text-left">
+          Think DJL Automation for your next project.
+        </p>
+		<p class="mt-4">
+	      <a href="http://www.linkedin.com/in/daniel-lloyd-b28533115"> <img src="img/linkedin.svg" class="w-10 dark:hidden" alt="LinkedIn Profile"> </a>
+	      <a href="http://www.linkedin.com/in/daniel-lloyd-b28533115"> <img src="img/linkedin_dark.svg" class="w-10 hidden dark:block" alt="LinkedIn Profile"> </a>
+		</p>
+      </article>
+      <img class="w-1/2 dark:hidden" src="./img/djl_col_light.svg" alt="DJL Logo" />
+      <img class="w-1/2 hidden dark:block" src="./img/djl_col_dark.svg" alt="DJL Logo" />
+    </section>
+
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+    <section id="services" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-stone-900 dark:text-white sm:text-5xl">
+        Our Services
+      </h2>
+      <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-stone-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-stone-900 sm:w-5/6">
+          <img src="./img/document.svg" alt="Documentation" class="mb-6 w-1/2 dark:hidden" />
+          <img src="./img/document_dark.svg" alt="Documentation" class="mb-6 w-1/2 hidden dark:block" />
+          <h3 class="text-center text-3xl text-stone-900 dark:text-white">
+            Design
+          </h3>
+          <p class="mt-2 text-center text-2xl text-stone-500 dark:text-stone-400">
+            Functional specifications, commissioning documentation, mockups and more.
+          </p>
+        </li>
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-stone-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-stone-900 sm:w-5/6">
+          <img src="./img/computer.svg" alt="Development" class="mb-6 w-1/2 dark:hidden" />
+          <img src="./img/computer_dark.svg" alt="Development" class="mb-6 w-1/2 hidden dark:block" />
+          <h3 class="text-center text-3xl text-stone-900 dark:text-white">
+            Develop
+          </h3>
+          <p class="mt-2 text-center text-2xl text-stone-500 dark:text-stone-400">
+            PLC development for all of the major brands. HMI and SCADA development on all platforms.
+          </p>
+        </li>
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-stone-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-stone-900 sm:w-5/6">
+          <img src="./img/construction.svg" alt="Commissioning" class="mb-6 w-1/2 dark:hidden" />
+          <img src="./img/construction_dark.svg" alt="Commissioning" class="mb-6 w-1/2 hidden dark:block" />
+          <h3 class="text-center text-3xl text-stone-900 dark:text-white">
+            Commission
+          </h3>
+          <p class="mt-2 text-center text-2xl text-stone-500 dark:text-stone-400">
+            We see our projects out until the end. From first tag to first coal. 
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="mx-auto w-1/2 bg-stone-900 dark:bg-white" />
+
+    <section id="testimonials"
+      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-stone-900 dark:text-white sm:text-5xl">
+        Testimonials
+      </h2>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-stone-600 py-12 pl-14 pr-8 dark:bg-stone-900">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-stone-400 sm:text-3xl">
+			DJL Automation has worked on some of our largest and highest risk projects. We can trust that DJL Automation will always deliver and continue to make our projects a success.
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-stone-500 dark:text-stone-400 sm:text-2xl">
+          &#8212;Chris Lodge - Service Delivery Manager, Ampcontrol
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-stone-600 py-12 pl-14 pr-8 dark:bg-stone-900">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-stone-400 sm:text-3xl">
+			When we need site coverage in a pinch, we know to contact DJL Automation. Their expertise in underground conveyor and longwall mining systems make them a top pick for process control systems maintenance in the underground coal mining industry.
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-stone-500 dark:text-stone-400 sm:text-2xl">
+          &#8212;Stuart Kirby - PCS Manager, Kestrel Resources
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-stone-600 py-12 pl-14 pr-8 dark:bg-stone-900">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-stone-400 sm:text-3xl">
+			Underground conveyor systems are a complex beast and DJL Automation has the rare skills needed to deliver our projects seamlessly. When we bring in DJL, we know we no longer have to worry.
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-stone-500 dark:text-stone-400 sm:text-2xl">
+          &#8212;Mitchell Bilborough - Engineering Manager, Nepean Power
+        </figcaption>
+      </figure>
+    </section>
+
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-stone-900 dark:text-white sm:text-5xl">
+        Contact Us
+      </h2>
+      <form action="https://formspree.io/f/meojgnoy" method="post" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required minlength="3" maxlength="60" placeholder="Your Email"
+          class="w-full rounded-xl border border-solid border-stone-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+          class="w-full rounded-xl border border-solid border-stone-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
+        <button
+          class="w-48 rounded-xl border border-solid border-stone-900 bg-stone-700 p-3 text-white hover:bg-stone-600 active:bg-stone-500 dark:border-none">
+          Submit
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer" class="bg-stone-700 text-xl text-white">
+    <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
+      <address>
+        <h2>DJL Automation Pty Ltd</h2>
+        130 De Vitre St<br />
+        Lambton, NSW, 2299<br />
+        Email:
+        <a href="mailto:daniel@djlautomation.com.au">daniel@djlautomation.com.au</a><br />
+        Phone: <a href="tel:+61466536465">0466 536 465</a>
+      </address>
+      <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+        <a href="#services" class="hover:opacity-90">Our Services</a>
+        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+        <a href="#contact" class="hover:opacity-90">Contact Us</a>
+      </nav>
+      <div class="flex flex-col sm:gap-2">
+        <p class="text-right">Copyright &copy; <span id="year">2024</span></p>
+        <p class="text-right">All Rights Reserved</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
